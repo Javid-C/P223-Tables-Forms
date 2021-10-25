@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables & Forms</title>
+</head>
+
+<body>
+
+    <!-- <strong>Notification</strong>
+    <sup>5</sup><br>
+
+    <span>H <sub>2</sub>O</span> -->
+
+    <!-- <table border="1" style="border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th>Group</th>
+                <th colspan="2">Fullname</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="10">
+                    P223
+                </td>
+                <td>Vusal</td>
+                <td>Bagirov</td>
+                <td>28</td>
+            </tr>
+
+            <tr>
+                <td>Nurlan</td>
+                <td>Mammadli</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>Ahad</td>
+                <td>Tagiyev</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>Lala</td>
+                <td>Quliyeva</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Nurlan</td>
+                <td>Mammadli</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>Ahad</td>
+                <td>Tagiyev</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>Lala</td>
+                <td>Quliyeva</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Nurlan</td>
+                <td>Mammadli</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>Ahad</td>
+                <td>Tagiyev</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>Lala</td>
+                <td>Quliyeva</td>
+                <td>25</td>
+            </tr>
+
+        </tbody>
+    </table> -->
+
+    <form action="" method="post" autocomplete="off">
+        <label for="Name">Name:</label> <br>
+        <input type="text" id="Name" name="name" placeholder="Please enter your name" required> <br><br>
+
+        <label for="surname">Surname:</label><br>
+        <input type="text" id="surname" name="surname" placeholder="Please enter your surname" required> <br><br>
+
+        <label for="email">Email:</label><br>
+        <!-- readonly -->
+        <input type="email" name="email" value="javid@gmail.com" disabled id="email"><br><br>
+
+        <label for="pw">Password:</label><br>
+        <input type="password" minlength="8" maxlength="12" id="pw"><br><br>
+
+        <span>Please choose your hobbies:</span><br>
+        <input type="checkbox" name="" checked id="cb">
+        <label for="cb">Jogging</label><br>
+        <input type="checkbox" name="" id="movie">
+        <label for="movie">Movie</label><br>
+        <input type="checkbox" name="" id="gaming">
+        <label for="gaming">Gaming</label><br><br>
+
+        <p>Please choose your gender:</p>
+        <input type="radio" checked name="gender" id="male">
+        <label for="male">Male</label><br>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label><br>
+        <input type="radio" name="other" id="other">
+        <label for="other">Other</label><br><br>
+
+        <label for="heigth">Height:</label><br>
+        <input type="number" min="140" max="168" step="0.1"> <br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="date" min="1995-05-23" id="age"><br><br>
+
+        <input type="datetime-local"><br><br>
+
+        <label for="phone">Phone</label><br>
+        <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Example(111-11-11)"><br><br>
+
+        <input type="color" id="color" value="#ffffff"><br><br>
+
+        <input type="range" id="range" min="0" max="168"><br><br>
+
+        <input type="file" multiple><br><br>
+
+        <input type="time"><br><br>
+        <input type="month"><br><br>
+        <input type="week"><br><br>
+
+        <input type="button" value="Click me"><br><br>
+
+        <!-- <button type="menu">Menu</button> -->
+
+        <button type="button">This is button tag</button><br><br>
+
+        <input type="reset"><br><br>
+
+        <!-- <input type="image" src="https://freepngimg.com/thumb/submit_button/25395-2-submit-button-thumb.png"><br><br> -->
+
+        <input type="hidden"><br><br>
+
+        <label for="url">Url:</label><br>
+        <input type="url" id="url"> <br><br>
+
+        <label for="search">Search input:</label><br>
+        <input type="search" id="search"><br><br>
+
+        <select name="" id="">
+            <optgroup label="MSI">
+                <option value="x5AsMl" >x5AsMl</option>
+                <option value="x5AsMl" >x5AsMl</option>
+                <option value="x5AsMl" >x5AsMl</option>
+            </optgroup>
+           
+            <optgroup label="ASUS">
+                <option value="">aks</option>
+            <option value="">aks</option>
+            </optgroup>
+            
+            <optgroup label="Acer">
+                <option value="ka981">ka981</option>
+                <option value="ka981">ka981</option>
+                <option value="ka981">ka981</option>
+            </optgroup>
+           
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>
